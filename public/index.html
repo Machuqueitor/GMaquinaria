@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Inicio de Sesión</title>
+
+		<!--Bootstrap libraries-->
+	<link rel="stylesheet" href="lib/css/bootstrap.css">
+	<script src="lib/js/jquery.min.js" charset="utf-8"></script>
+	<script src="lib/js/bootstrap.min.js" charset="utf-8"></script>
+
+	<!--Bootstrap libraries-->
+	<link rel="stylesheet" href="lib/css/sidebar.css">
+</head>
+<body>
+
+	<navbar-dir ng-if="estadoLog"></navbar-dir>
+
+	<div class="container-fluid">
+		<div class="row">
+			<side-dir ng-if="estadoLog"></side-dir>
+			<div ng-view></div>
+		</div>
+	</div>
+	
+
+	<!--Import Angular-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js" ></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.js"></script>
+
+	<!--Angular actions-->
+	<script src="app/app.js" charset="utf-8"></script>
+	<script src="app/controllers/loginCtrl.js" charset="utf-8"></script>
+</body>
+</html>
