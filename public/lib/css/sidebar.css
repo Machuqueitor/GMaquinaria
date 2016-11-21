@@ -5,12 +5,9 @@
 /* Move down content because we have a fixed navbar that is 50px tall{} */
 body {
   padding-top: 50px;
-  background-image: url(/../../lib/img/img1.jpg);
-  background-size: cover;
 }
 
-.panel{
-    background-color: rgba(245, 245, 245, 0.8);
+.panel-success{
 }
 
 /*
@@ -81,25 +78,7 @@ body {
     padding-left: 40px;
   }
 }
-.main .page-header {
+.main {
   margin-top: 0;
 }
 
-
-/*
- * Placeholder dashboard ideas
-
-.placeholders {
-  margin-bottom: 30px;
-  text-align: center;
-}
-.placeholders h4 {
-  margin-bottom: 0;
-}
-.placeholder {
-  margin-bottom: 20px;
-}
-.placeholder img {
-  display: inline-block;
-  border-radius: 50%;
-}*/

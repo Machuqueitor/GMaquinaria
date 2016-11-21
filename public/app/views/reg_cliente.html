@@ -1,84 +1,96 @@
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-sm-offset-2 main" ng-controller="clienteCtrl">
 	<div class="row">
-		<div class="panel panel-success">
-			<div class="panel-heading">
-				<h3 class="panel-title text-center">Registro Cliente</h3>
-			</div>
-			<div class="panel-body">
-				<form class="form-horizontal">
-					<div class="form-group">
-					   <label for="rut" class="col-sm-3 control-label text-center">Rut : </label>
-					   <div class="col-sm-6">
-							<input type="number" name="" class="form-control">
+		<div class="col-md-12">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title text-center">Registro Cliente</h3>
+				</div>								
+				<div class="panel-body">
+					<form class="form-horizontal">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-group">
+								    <label for="rut" class="col-sm-3 col-sm-offset-1 control-label">Rut *</label>
+								    <div class="col-sm-7">
+										<input type="number" name="" class="form-control input-sm">
+									</div>
+								</div>
+								<div class="form-group">
+								    <label for="nombre" class="col-sm-3 col-sm-offset-1 control-label"> Nombres</label>
+								    <div class="col-sm-7">
+										<input type="text" name="" class="form-control input-sm">
+									</div>
+								</div>
+								<div class="form-group">
+								   <label for="apellido" class="col-sm-3 col-sm-offset-1 control-label">Apellidos  </label>
+								   <div class="col-sm-7">
+										<input type="text" name="" class="form-control input-sm">
+									</div>
+								</div>
+								<div class="form-group">
+								   <label for="fecha_nac" class="col-sm-3 col-sm-offset-1 control-label">Fecha Nac </label>
+								   <div class="col-sm-7">
+										<input type="date" name="" class="form-control input-sm">
+									</div>
+								</div>
+								
+								<div class="form-group">
+								   <label for="checkbox" class="col-sm-3 col-sm-offset-1 control-label">Sexo </label>
+								   <div class="col-sm-7">
+										<label class="radio-inline"><input type="radio" name="optradio">Hombre </label>
+										<label class="radio-inline"><input type="radio" name="optradio">Mujer </label>
+									</div>
+								</div>	
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+								   <label for="direccion" class="col-sm-3 col-sm-offset-1 control-label">Direccion </label>
+								   <div class="col-sm-7">
+										<input type="text" name="" class="form-control input-sm">
+									</div>
+								</div>
+								<div class="form-group">
+								   <label for="comuna" class="col-sm-3 col-sm-offset-1 control-label">Comuna </label>
+								   <div class="col-sm-7">
+										<select class="form-control input-sm" id="comuna">
+										    <option>Temuco</option>
+										    <option>Padre las Casas</option>
+										    <option>NUeva Imperial</option>
+										</select>
+								   </div>
+								</div>
+								<div class="form-group">
+								   <label for="telefono_f" class="col-sm-3 col-sm-offset-1 control-label">Tel. Fijo </label>
+								   <div class="col-sm-7">
+										<input type="tel" name="" class="form-control input-sm">
+									</div>
+								</div>
+								<div class="form-group">
+								   <label for="telefono_m" class="col-sm-3 col-sm-offset-1 control-label">Tel. Movil </label>
+								   <div class="col-sm-7">
+										<input type="tel" name="" class="form-control input-sm">
+									</div>
+								</div>
+								<div class="form-group">
+								   <label for="email" class="col-sm-3 col-sm-offset-1 control-label">Email </label>
+								   <div class="col-sm-7">
+										<input type="email" name="" class="form-control input-sm">
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="form-group">
-					   <label for="nombre" class="col-sm-3 control-label"> Nombres: </label>
-					   <div class="col-sm-6">
-							<input type="text" name="" class="form-control">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">
+								    <div class="col-sm-8 col-sm-offset-2">
+										<input type="submit" name="" class="form-control btn btn-success" value="Registrar">
+									</div>
+								</div>	
+							</div>
 						</div>
-					</div>
-					<div class="form-group">
-					   <label for="apellido" class="col-sm-3 control-label">Apellidos : </label>
-					   <div class="col-sm-6">
-							<input type="text" name="" class="form-control">
-						</div>
-					</div>
-					<div class="form-group">
-					   <label for="fecha_nac" class="col-sm-3 control-label">Fecha Nacimiento : </label>
-					   <div class="col-sm-6">
-							<input type="date" name="" class="form-control">
-						</div>
-					</div>
-					<div class="form-group">
-					   <label for="direccion" class="col-sm-3 control-label">Direccion : </label>
-					   <div class="col-sm-6">
-							<input type="text" name="" class="form-control">
-						</div>
-					</div>
-					<div class="form-group">
-					   <label for="comuna" class="col-sm-3 control-label">Comuna : </label>
-					   <div class="col-sm-6">
-							<select class="form-control" id="comuna">
-							    <option>Temuco</option>
-							    <option>Padre las Casas</option>
-							    <option>NUeva Imperial</option>
-							</select>
-					   </div>
-					</div>
-					<div class="form-group">
-					   <label for="telefono_f" class="col-sm-3 control-label">Telefono Fijo :</label>
-					   <div class="col-sm-6">
-							<input type="number" name="" class="form-control">
-						</div>
-					</div>
-					<div class="form-group">
-					   <label for="telefono_m" class="col-sm-3 control-label">Telefono Movil :</label>
-					   <div class="col-sm-6">
-							<input type="number" name="" class="form-control">
-						</div>
-					</div>
-					<div class="form-group">
-					   <label for="email" class="col-sm-3 control-label">Correo Electronico :</label>
-					   <div class="col-sm-6">
-							<input type="email" name="" class="form-control">
-						</div>
-					</div>
-					<div class="form-group">
-					   <label for="checkbox" class="col-sm-3 control-label">Sexo :</label>
-					   <div class="col-sm-6">
-							<label class="radio-inline"><input type="radio" name="optradio">Hombre </label>
-							<label class="radio-inline"><input type="radio" name="optradio">MUjer </label>
-						</div>
-					</div>
-					<div class="form-group">
-					    <label for="boton" class="col-sm-3 control-label">  </label>
-					    <div class="col-sm-6">
-							<input type="submit" name="" class="form-control btn btn-success" value="Registrar">
-						</div>
-					</div>					
-				</form>	
-			</div>
+					</form>
+				</div>		
+			</div><!--FIn panel panel-default-->
 		</div>
 	</div>
 </div>
