@@ -4,6 +4,7 @@
 		
 		$scope.verificar=function(rutLog,passLog){
 
+			 socket.emit("log",data)
 				if(rutLog==1 && passLog == 1){
 					$rootScope.estadoLog = true;
 					location.hash ="/Cliente";

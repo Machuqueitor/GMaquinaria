@@ -16,7 +16,7 @@
 			})
 			.when('/Cliente',{
 				controller : 'clienteCtrl',
-				templateUrl: 'app/views/reg_cliente.html'
+				templateUrl: './app/views/reg_cliente.html'
 			})
 			.when('/Cuenta',{
 				controller : 'cuentaCtrl',
