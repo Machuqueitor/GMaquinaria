@@ -1,10 +1,9 @@
 (function () {
 	var app = angular.module('app',['ngRoute','Login','Cliente','Cuenta','Disp']);
-
-	app.factory('socket', function() {
+	 app.factory('socket', function() {
 	    var socket = io();
 	    return socket;
-	});
+	})
 
 
 	//Rutas

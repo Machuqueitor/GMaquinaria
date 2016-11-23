@@ -6,39 +6,39 @@
 					<h3 class="panel-title text-center">Registro Cliente</h3>
 				</div>								
 				<div class="panel-body">
-					<form class="form-horizontal">
+					<form class="form-horizontal" ng-submit="agregarCliente()">
 						<div class="row">
 							<div class="col-sm-6">
 								<div class="form-group">
 								    <label for="rut" class="col-sm-3 col-sm-offset-1 control-label">Rut *</label>
 								    <div class="col-sm-7">
-										<input type="number" name="" class="form-control input-sm">
+										<input type="number" name="" class="form-control input-sm" ng-model="Rut" required>
 									</div>
 								</div>
 								<div class="form-group">
 								    <label for="nombre" class="col-sm-3 col-sm-offset-1 control-label"> Nombres</label>
 								    <div class="col-sm-7">
-										<input type="text" name="" class="form-control input-sm">
+										<input type="text" name="" class="form-control input-sm" ng-model="Nombre" required>
 									</div>
 								</div>
 								<div class="form-group">
 								   <label for="apellido" class="col-sm-3 col-sm-offset-1 control-label">Apellidos  </label>
 								   <div class="col-sm-7">
-										<input type="text" name="" class="form-control input-sm">
+										<input type="text" name="" class="form-control input-sm" ng-model="Apellido" required>
 									</div>
 								</div>
 								<div class="form-group">
 								   <label for="fecha_nac" class="col-sm-3 col-sm-offset-1 control-label">Fecha Nac </label>
 								   <div class="col-sm-7">
-										<input type="date" name="" class="form-control input-sm">
+										<input type="date" name="" class="form-control input-sm" ng-model="Date" require>
 									</div>
 								</div>
 								
 								<div class="form-group">
 								   <label for="checkbox" class="col-sm-3 col-sm-offset-1 control-label">Sexo </label>
 								   <div class="col-sm-7">
-										<label class="radio-inline"><input type="radio" name="optradio">Hombre </label>
-										<label class="radio-inline"><input type="radio" name="optradio">Mujer </label>
+										<label class="radio-inline"><input type="radio" name="optradio" ng-model="Sexo" required>Hombre </label>
+										<label class="radio-inline"><input type="radio" name="optradio" ng-model="Sexo" required>Mujer </label>
 									</div>
 								</div>	
 							</div>
@@ -46,35 +46,33 @@
 								<div class="form-group">
 								   <label for="direccion" class="col-sm-3 col-sm-offset-1 control-label">Direccion </label>
 								   <div class="col-sm-7">
-										<input type="text" name="" class="form-control input-sm">
+										<input type="text" name="" class="form-control input-sm" ng-model="Direccion" required>
 									</div>
 								</div>
 								<div class="form-group">
 								   <label for="comuna" class="col-sm-3 col-sm-offset-1 control-label">Comuna </label>
 								   <div class="col-sm-7">
-										<select class="form-control input-sm" id="comuna">
+										<select class="form-control input-sm" id="comuna" ng-model="Comuna" required>
 										    <option>Temuco</option>
-										    <option>Padre las Casas</option>
-										    <option>NUeva Imperial</option>
 										</select>
 								   </div>
 								</div>
 								<div class="form-group">
 								   <label for="telefono_f" class="col-sm-3 col-sm-offset-1 control-label">Tel. Fijo </label>
 								   <div class="col-sm-7">
-										<input type="tel" name="" class="form-control input-sm">
+										<input type="tel" name="" class="form-control input-sm" ng-model="TelFijo">
 									</div>
 								</div>
 								<div class="form-group">
 								   <label for="telefono_m" class="col-sm-3 col-sm-offset-1 control-label">Tel. Movil </label>
 								   <div class="col-sm-7">
-										<input type="tel" name="" class="form-control input-sm">
+										<input type="tel" name="" class="form-control input-sm" ng-model="TeMlovil">
 									</div>
 								</div>
 								<div class="form-group">
 								   <label for="email" class="col-sm-3 col-sm-offset-1 control-label">Email </label>
 								   <div class="col-sm-7">
-										<input type="email" name="" class="form-control input-sm">
+										<input type="email" name="" class="form-control input-sm" ng-model="Email">
 									</div>
 								</div>
 							</div>
@@ -82,8 +80,8 @@
 						<div class="row">
 							<div class="col-sm-12">
 								<div class="form-group">
-								    <div class="col-sm-8 col-sm-offset-2">
-										<input type="submit" name="" class="form-control btn btn-success" value="Registrar">
+								  <div class="col-sm-8 col-sm-offset-2">
+										<input type="submit" name="" class="form-control btn btn-success" value="Registrar" ng-submit="">
 									</div>
 								</div>	
 							</div>

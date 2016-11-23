@@ -1,7 +1,6 @@
 var mongoose = require('mongoose');
 var Schema   = mongoose.Schema;
 
-mongoose.connect('mongodb://localhost/gestionmaq');
 
 var cliente_schema = new Schema(
 	{
@@ -12,10 +11,17 @@ var cliente_schema = new Schema(
 		sexo:Boolean,
 		comuna:String,
 		direccion:String,
-		tel_fijo:Integer,
-		tel_movil:Integer,
+		tel_fijo:String,
+		tel_movil:String,
 		email:String
 	}
 );
 
-var cliente = mongoose.model('Cliente', cliente_schema);
+var clienteEsquema = mongoose.model('Cliente', cliente_schema);
+
+
+module.exports.clienteEsquema=clienteEsquema;
+
+
+
+

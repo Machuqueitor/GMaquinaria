@@ -1,4 +1,4 @@
-<div class="col-sm-9 col-sm-offset-3 col-md-10 col-sm-offset-2 main" ng-controller="dispCtrl">
+<div class="col-sm-9 col-sm-offste-3 col-md-10 col-sm-offset-2 main" ng-controller="dispCtrl">
 	<div class="row">
 
 		<div class="col-md-4">
@@ -9,36 +9,36 @@
 				<div class="panel-body">
 					<form action="" class="form-horizontal">
 						<div class="form-group">
-						    <label for="" class="col-sm-4 control-label">Categoria :</label>
+						    <label for="" class="col-sm-4 control-label">Categoria</label>
 						    <div class="col-sm-8">
-								<select class="form-control input-sm" id="comuna">
-								    <option>Temuco</option>
-								    <option>Padre las Casas</option>
-								    <option>NUeva Imperial</option>
+								<select class="form-control input-sm" ng-model="idCategoria" >
+							     	<option  ng-repeat="categoria in Categorias" value=" {{categoria._id}}" ng-selected="idActual(idCategoria)">{{categoria.categoria}}</option>
 								</select>						    
 							</div>
 						</div>
+
 						<div class="form-group">
-						    <label for="" class="col-sm-4 control-label text-center">Tipo:</label>
+						    <label for="" class="col-sm-4 control-label text-center">Tipo</label>
 						    <div class="col-sm-8">
-						        <select class="form-control input-sm" id="comuna">
-								    <option>Temuco</option>
+						        <select class="form-control input-sm" >
+								    <option>---Select---</option>
 								</select>	
 						    </div>
 						</div>
+
 						<div class="form-group">
-						    <label for="" class="col-sm-4 control-label">Marca :</label>
+						    <label for="" class="col-sm-4 control-label">Marca</label>
 						    <div class="col-sm-8">
-						      	<select class="form-control input-sm" id="comuna">
-								    <option>Temuco</option>
+						      	<select class="form-control input-sm" >
+								    <option>---Select---</option>
 								</select>
 						    </div>
 						</div>
 						<div class="form-group">
-						    <label for="" class="col-sm-4 control-label">Modelo :</label>
+						    <label for="" class="col-sm-4 control-label">Modelo</label>
 						    <div class="col-sm-8">
-						      	<select class="form-control input-sm" id="comuna">
-								    <option>Temuco</option>
+						      	<select class="form-control input-sm" >
+								    <option>---Select---</option>
 								</select>
 						    </div>
 						</div>

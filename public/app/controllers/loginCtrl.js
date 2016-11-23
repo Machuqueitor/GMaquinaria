@@ -3,8 +3,13 @@
 	.controller('LoginCtrl', ['$scope','$rootScope', function ($scope,$rootScope) {
 		
 		$scope.verificar=function(rutLog,passLog){
+			
+			var user = {
+				rutUser:rutLog,
+				passUser:passLog
+			};	
+			//socket.emit('log',user);
 
-			 socket.emit("log",data)
 				if(rutLog==1 && passLog == 1){
 					$rootScope.estadoLog = true;
 					location.hash ="/Cliente";
